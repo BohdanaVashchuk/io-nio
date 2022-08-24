@@ -16,10 +16,10 @@ public class Task4 {
         File[] files = file.listFiles();
         for (File object: files) {
             if(object.isFile()){
-                LOGGER.info("File name: " + object.getName());
+                LOGGER.info("File name: " + object.getName() + " File size in bytes: " + object.length());
             }
             else if(object.isDirectory()){
-                LOGGER.info("Directory name is: " + object.getName());
+                LOGGER.info("Directory name is: " + object.getName() + " Directory size in bytes: " + object.length());
             }
         }
     }
